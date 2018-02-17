@@ -26,7 +26,6 @@ $factory->define(App\Model\Business::class, function (Faker\Generator $faker) {
 
     return [
         'name' => $faker->name,
-        //'description' => $faker->text,
         'user_id' => 1,
         'country' => $faker->country,
         'state' => $faker->state,
