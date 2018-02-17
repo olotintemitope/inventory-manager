@@ -2,45 +2,45 @@
 
 namespace App\Repository;
 
-use App\Model\Business;
+use App\Model\Category;
 use App\Repository\Contract\InventoryInterface;
 
-class BusinessRepository implements InventoryInterface
+class CategoryRepository implements InventoryInterface
 {
 	public function findById($id)
 	{
-		return Business::find($id);
+		return Category::find($id);
 	}
 
 	public function find($id, $columns)
 	{
-		return Business::find($id)
+		return Category::find($id)
 			->update($columns);
 	}
  
     public function findBy($field, $value, array $columns)
     {
-    	return Business::where($field, $value)
+    	return Category::where($field, $value)
 			->update($columns);
     }
 
 	pubic function findWhere($field, $value)
 	{
-		return Business::where($field, $value);
+		return Category::where($field, $value);
 	}
 
 	public function findAll()
 	{
-		return Business::all();
+		return Category::all();
 	}
 
 	public function create(array $columns)
 	{
-		return Business::create($columns);
+		return Category::create($columns);
 	}
 
 	public function update(array $data, $id)
 	{
-		return Business::update($data);
+		return Category::update($data);
 	}
 }
