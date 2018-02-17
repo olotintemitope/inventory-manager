@@ -29,4 +29,9 @@ class Business extends Model
     {
     	return $this->hasMany('App\Model\Item');
     }
+
+    public function sales()
+    {
+    	return $this->hasMany('App\Model\Sale');
+    }
 }
