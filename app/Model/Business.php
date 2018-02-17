@@ -17,6 +17,16 @@ class Business extends Model
 
     public function user()
     {
-    	return $this->belongsTo('App\Model\User');
+    	return $this->hasOne('App\Model\User');
+    }
+
+    public function categories()
+    {
+    	return $this->hasMany('App\Model\Catgory');
+    }
+
+    public function items()
+    {
+    	return $this->hasMany('App\Model\Item');
     }
 }
