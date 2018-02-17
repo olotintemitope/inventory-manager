@@ -12,10 +12,6 @@ class ItemTableSeeder extends Seeder
     public function run()
     {
         factory(App\Model\Item::class, 5)
-           ->create()
-           ->each(function ($i) {
-                $i->business()->save(factory(App\Model\Business::class)->make());
-                $i->category()->save(factory(App\Model\Category::class)->make());
-            });
+           ->create();
     }
 }

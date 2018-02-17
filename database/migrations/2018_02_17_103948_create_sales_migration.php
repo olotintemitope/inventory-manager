@@ -15,8 +15,6 @@ class CreateSalesMigration extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('item_id')->unassigned();
-            $table->integer('business_id')->unassigned();
             $table->double('price', 8, 2);
             $table->integer('quantity');
             $table->double('total_vat', 8, 2);
@@ -24,6 +22,8 @@ class CreateSalesMigration extends Migration
             $table->double('total_amount', 8, 2);
             $table->double('total_base_amount', 8, 2);
             $table->string('customer_name');
+            $table->integer('item_id')->unassigned();
+            $table->integer('business_id')->unassigned();
             $table->timestamps();
 
             $table->foreign('business_id')
@@ -33,7 +33,7 @@ class CreateSalesMigration extends Migration
 
             $table->foreign('item_id')
                 ->references('id')
-                ->on('categories')
+                ->on('items')
                 ->onDelete('cascade');
         });
     }

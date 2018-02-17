@@ -12,9 +12,6 @@ class CategoryTableSeeder extends Seeder
     public function run()
     {
         factory(App\Model\Category::class, 3)
-           ->create()
-           ->each(function ($c) {
-                $c->business()->save(factory(App\Model\Business::class)->make());
-            });
+           ->create();
     }
 }

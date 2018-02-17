@@ -12,9 +12,6 @@ class BusinessessTableSeeder extends Seeder
     public function run()
     {
         factory(App\Model\Business::class, 3)
-           ->create()
-           ->each(function ($b) {
-                $b->user()->save(factory(App\Model\User::class)->make());
-            });
+           ->create();
     }
 }
