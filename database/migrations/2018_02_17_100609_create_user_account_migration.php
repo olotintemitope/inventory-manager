@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBusinessMigration extends Migration
+class CreateUserAccountMigration extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,20 @@ class CreateBusinessMigration extends Migration
      */
     public function up()
     {
-        Schema::create('businesses', function (Blueprint $table) {
+        Schema::create('user_accounts', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->string('name');
-            $table->string('country');
-            $table->string('state');
-            $table->string('timezone');
-            $table->string('currency');
+            $table->integer('business_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users')
+                ->onDelete('cascade');
+
+            $table->foreign('business_id')
+                ->references('id')
+                ->on('businesses')
                 ->onDelete('cascade');
         });
     }
@@ -37,6 +38,6 @@ class CreateBusinessMigration extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('business');
+        Schema::dropIfExists('user_accounts');
     }
 }
