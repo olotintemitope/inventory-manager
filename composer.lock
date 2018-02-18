@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "23e1709f781fe01f2177cf44128205ba",
-    "content-hash": "e7bef56f40ad04dafb1ae4a117779370",
+    "hash": "0419dc476eb5d7b5125ea8b266b888ac",
+    "content-hash": "d35f363d1357591f035dde964d6280e3",
     "packages": [
         {
             "name": "dingo/api",
@@ -4033,14 +4033,12 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {
-        "dingo/api": 20
-    },
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6.3"
+        "php": ">=5.6.4"
     },
     "platform-dev": []
 }
