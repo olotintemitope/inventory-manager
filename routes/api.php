@@ -27,7 +27,7 @@ $params = [
 ];
 
 $api->group($params, function($api) {
-    $api->get('users', 'TestController@show');
+    $api->get('users', 'UserController@show');
 });
 
 
