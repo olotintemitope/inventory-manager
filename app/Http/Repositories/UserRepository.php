@@ -14,7 +14,7 @@ class UserRepository implements InventoryInterface
 
 	public function find($id, $columns)
 	{
-		return User::find($id)
+		return User::findOrFail($id)
 			->where($columns);
 	}
  

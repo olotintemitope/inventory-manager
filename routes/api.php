@@ -40,6 +40,8 @@ $api->group($params, function($api) {
 
 $api->group($authParams, function($api) {
 	$api->get('users', 'UserController@getAll');
+	$api->get('users/{id}', 'UserController@getUser');
+	$api->put('users/{id}', 'UserController@updateUser');
 	$api->post('logout', 'AuthenticateController@logout');
 	$api->get('token', 'AuthenticateController@getToken');
 });

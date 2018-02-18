@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Dingo\Api\Routing\Helpers;
 use App\Http\Requests\UserRequest;
 use App\Transformers\UserTransformer;
+use App\Http\Requests\UpdateUserRequest;
 use App\Http\Repositories\UserRepository;
 
 class UserController extends Controller
@@ -37,10 +38,19 @@ class UserController extends Controller
     	return $this->response->collection($users, new UserTransformer);
     }
 
-    public function getBusinesses($id)
+    public function getUser($id)
     {
-    	$businesses = $this->userRepository->findById($id);
-    	if ($businesses->count() > 0) {
+    	$user = $this->userRepository->findById($id);
+
+    	return $this->response->item($user, new UserTransformer);
+    }
+
+    public function updateUser(UpdateUserRequest $request, $id)
+    {
+    	if ($this->userRepository->update($request->all(), $id)) {
+    		return $this->response->noContent();
     	}
+
+    	return $this->response->errorBadRequest();
     }
 }
