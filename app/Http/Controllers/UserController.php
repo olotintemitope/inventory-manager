@@ -6,6 +6,7 @@ use App\Model\User;
 use Illuminate\Http\Request;
 use Dingo\Api\Routing\Helpers;
 use App\Http\Requests\UserRequest;
+use App\Transformers\UserTransformer;
 use App\Http\Repositories\UserRepository;
 
 class UserController extends Controller
@@ -30,7 +31,16 @@ class UserController extends Controller
 
     public function getAll()
     {
-    	return $this->userRepository
+    	$users = $this->userRepository
     		->findAll();
+
+    	return $this->response->collection($users, new UserTransformer);
+    }
+
+    public function getBusinesses($id)
+    {
+    	$businesses = $this->userRepository->findById($id);
+    	if ($businesses->count() > 0) {
+    	}
     }
 }
