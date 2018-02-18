@@ -19,17 +19,26 @@
 
 $api = app('Dingo\Api\Routing\Router');
 
-$params = [
+$authParams = [
     'as' => 'api::',
     'version' => 'v1',
     'domain' => env('APP_URL'), // Notice we use the domain WITHOUT port number
     'namespace' => 'App\\Http\\Controllers',
     'middleware' => 'api.auth',
 ];
+$params = [
+    'as' => 'api::',
+    'version' => 'v1',
+    'domain' => env('APP_URL'), // Notice we use the domain WITHOUT port number
+    'namespace' => 'App\\Http\\Controllers',
+];
 
 $api->group($params, function($api) {
-    $api->get('users', 'UserController@show');
+    $api->post('users', 'UserController@store');
     $api->post('authenticate', 'AuthenticateController@authenticate');
+});
+
+$api->group($authParams, function($api) {
 	$api->post('logout', 'AuthenticateController@logout');
 	$api->get('token', 'AuthenticateController@getToken');
 });
