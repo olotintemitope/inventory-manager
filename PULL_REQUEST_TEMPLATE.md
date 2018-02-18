@@ -5,4 +5,4 @@
 #### What are the relevant pivotal tracker stories?
 #### Screenshots (if appropriate)
 #### Questions:
-[@mcampsteyn](https://github.com/mcampsteyn)
+[@laztopaz](https://github.com/andela-tolotin)
