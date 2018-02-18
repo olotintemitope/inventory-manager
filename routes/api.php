@@ -39,6 +39,7 @@ $api->group($params, function($api) {
 });
 
 $api->group($authParams, function($api) {
+	$api->get('users', 'UserController@getAll');
 	$api->post('logout', 'AuthenticateController@logout');
 	$api->get('token', 'AuthenticateController@getToken');
 });

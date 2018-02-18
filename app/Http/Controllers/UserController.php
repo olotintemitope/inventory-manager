@@ -10,14 +10,27 @@ use App\Http\Repositories\UserRepository;
 
 class UserController extends Controller
 {
+	public $userRepository;
+
 	use Helpers;
 
-    public function store(UserRequest $request, UserRepository $userRepository)
+	public function __construct(UserRepository $userRepository) 
+	{
+		$this->userRepository = $userRepository;
+	}
+
+    public function store(UserRequest $request)
     {
-    	if ($userRepository->create($request->all())) {
+    	if ($this->userRepository->create($request->all())) {
     		return $this->response->created();
     	}
 
     	return $this->response->errorBadRequest();
+    }
+
+    public function getAll()
+    {
+    	return $this->userRepository
+    		->findAll();
     }
 }
