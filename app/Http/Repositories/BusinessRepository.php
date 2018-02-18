@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Repository;
+namespace App\Http\Repositories;
 
 use App\Model\Business;
-use App\Repository\Contract\InventoryInterface;
+use App\Repositories\Contract\InventoryInterface;
 
 class BusinessRepository implements InventoryInterface
 {
@@ -15,13 +15,13 @@ class BusinessRepository implements InventoryInterface
 	public function find($id, $columns)
 	{
 		return Business::find($id)
-			->update($columns);
+			->where($columns);
 	}
  
-    public function findBy($field, $value, array $columns)
+    public function findBy($field, $value, $columns)
     {
     	return Business::where($field, $value)
-			->update($columns);
+			->where($columns);
     }
 
 	pubic function findWhere($field, $value)
@@ -41,6 +41,7 @@ class BusinessRepository implements InventoryInterface
 
 	public function update(array $data, $id)
 	{
-		return Business::update($data);
+		return Business::find($id)
+			->update($data);
 	}
 }

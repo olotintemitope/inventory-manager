@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Repository;
+namespace App\Http\Repositories;
 
 use App\Model\User;
-use App\Repository\Contract\InventoryInterface;
+use App\Http\Repositories\Contract\InventoryInterface;
 
 class UserRepository implements InventoryInterface
 {
@@ -15,16 +15,16 @@ class UserRepository implements InventoryInterface
 	public function find($id, $columns)
 	{
 		return User::find($id)
-			->update($columns);
+			->where($columns);
 	}
  
-    public function findBy($field, $value, array $columns)
+    public function findBy($field, $value, $columns)
     {
     	return User::where($field, $value)
-			->update($columns);
+			->andWhere($columns);
     }
 
-	pubic function findWhere($field, $value)
+	public function findWhere($field, $value)
 	{
 		return User::where($field, $value);
 	}
@@ -34,13 +34,14 @@ class UserRepository implements InventoryInterface
 		return User::all();
 	}
 
-	public function create(array $columns)
+	public function create(array $array)
 	{
-		return User::create($columns);
+		return User::create($array);
 	}
 
 	public function update(array $data, $id)
 	{
-		return User::update($data);
+		return User::find($id)
+			->update($data);
 	}
 }

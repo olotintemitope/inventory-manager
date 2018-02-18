@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Repository;
+namespace App\Http\Repositories;
 
 use App\Model\Category;
-use App\Repository\Contract\InventoryInterface;
+use App\Repositories\Contract\InventoryInterface;
 
 class CategoryRepository implements InventoryInterface
 {
@@ -15,13 +15,13 @@ class CategoryRepository implements InventoryInterface
 	public function find($id, $columns)
 	{
 		return Category::find($id)
-			->update($columns);
+			->where($columns);
 	}
  
-    public function findBy($field, $value, array $columns)
+    public function findBy($field, $value, $columns)
     {
     	return Category::where($field, $value)
-			->update($columns);
+			->where($columns);
     }
 
 	pubic function findWhere($field, $value)
@@ -34,13 +34,14 @@ class CategoryRepository implements InventoryInterface
 		return Category::all();
 	}
 
-	public function create(array $columns)
+	public function create(array $array)
 	{
-		return Category::create($columns);
+		return Category::create($array);
 	}
 
 	public function update(array $data, $id)
 	{
-		return Category::update($data);
+		return Category::find($id)
+			->update($data);
 	}
 }
