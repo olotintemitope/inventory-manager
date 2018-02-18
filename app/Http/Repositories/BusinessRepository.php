@@ -34,9 +34,9 @@ class BusinessRepository implements InventoryInterface
 		return Business::all();
 	}
 
-	public function create(array $columns)
+	public function create(array $array)
 	{
-		return Business::create($columns);
+		return Business::create($array);
 	}
 
 	public function update(array $data, $id)
