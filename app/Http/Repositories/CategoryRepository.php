@@ -24,7 +24,7 @@ class CategoryRepository implements InventoryInterface
 			->where($columns);
     }
 
-	pubic function findWhere($field, $value)
+	public function findWhere($field, $value)
 	{
 		return Category::where($field, $value);
 	}

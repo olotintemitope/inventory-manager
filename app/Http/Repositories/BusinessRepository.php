@@ -24,7 +24,7 @@ class BusinessRepository implements InventoryInterface
 			->where($columns);
     }
 
-	pubic function findWhere($field, $value)
+	public function findWhere($field, $value)
 	{
 		return Business::where($field, $value);
 	}

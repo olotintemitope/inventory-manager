@@ -24,7 +24,7 @@ class SaleRepository implements InventoryInterface
 			->andWhere($columns);
     }
 
-	pubic function findWhere($field, $value)
+	public function findWhere($field, $value)
 	{
 		return Sale::where($field, $value);
 	}

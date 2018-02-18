@@ -24,7 +24,7 @@ class ItemRepository implements InventoryInterface
 			->andWhere($columns);
     }
 
-	pubic function findWhere($field, $value)
+	public function findWhere($field, $value)
 	{
 		return Item::where($field, $value);
 	}
