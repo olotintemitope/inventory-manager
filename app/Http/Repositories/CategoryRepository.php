@@ -3,7 +3,7 @@
 namespace App\Http\Repositories;
 
 use App\Model\Category;
-use App\Repositories\Contract\InventoryInterface;
+use App\Http\Repositories\Contract\InventoryInterface;
 
 class CategoryRepository implements InventoryInterface
 {
