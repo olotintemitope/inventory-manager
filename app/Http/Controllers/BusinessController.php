@@ -15,8 +15,18 @@ class BusinessController extends Controller
 
 	use Helpers;
 
-	public function __construct(UserRepository $businessRepository) 
+	public function __construct(BusinessRepository $businessRepository) 
 	{
 		$this->businessRepository = $BusinessRepository;
 	}
+
+	public function store(BusinessRequest $request)
+    {
+    	if ($this->businessRepository->create($request->all())) {
+    		return $this->response->created();
+    	}
+
+    	return $this->response->errorBadRequest();
+    }
+
 }
