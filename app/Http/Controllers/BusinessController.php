@@ -74,11 +74,11 @@ class BusinessController extends Controller
 
     public function updateBusiness(UpdateBusinessRequest $request, $userId, $id)
     {
-    	$user = $this->userRepository->findById($userId);
     	$currentUser = null;
+    	$user = $this->userRepository->findById($userId);
 
     	if ($user instanceof User) {
-    		$currentUser->id;
+    		$currentUser = $user->id;
     	} else {
     		throw new UpdateResourceFailedException("User with this id is not found");
     	}
@@ -94,8 +94,25 @@ class BusinessController extends Controller
     	if ($currentUser !== $businessOwner) {
     		throw new UpdateResourceFailedException("User with this id is not authorized to update this business");
     	}
+    	// don't update all the fields but only update the available ones
+ 		if (array_key_exists('name', $request->all())) {
+    		$business->name = $request->all()['name'];
+    	}
+    	if (array_key_exists('country', $request->all())) {
+    		$business->country = $request->all()['country'];
+    	}
+    	if (array_key_exists('state', $request->all())) {
+    		$business->state = $request->all()['state'];
+    	}
+    	if (array_key_exists('timezone', $request->all())) {
+    		$business->timezone = $request->all()['timezone'];
+    	}
+    	if (array_key_exists('currency', $request->all())) {
+    		$business->currency = $request->all()['currency'];
+    	}
 
-    	if ($this->userRepository->update($request->all(), $id)) {
+    	if ($business) {
+    		$business->save();
     		return $this->response->noContent();
     	}
 

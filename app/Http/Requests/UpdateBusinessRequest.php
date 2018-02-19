@@ -24,7 +24,7 @@ class UpdateBusinessRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:businesses'
+            'name' => 'required'
         ];
     }
 }
