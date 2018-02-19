@@ -3,7 +3,7 @@
 namespace App\Http\Repositories;
 
 use App\Model\Business;
-use App\Repositories\Contract\InventoryInterface;
+use App\Http\Repositories\Contract\InventoryInterface;
 
 class BusinessRepository implements InventoryInterface
 {
@@ -24,7 +24,7 @@ class BusinessRepository implements InventoryInterface
 			->where($columns);
     }
 
-	pubic function findWhere($field, $value)
+	public function findWhere($field, $value)
 	{
 		return Business::where($field, $value);
 	}
@@ -34,9 +34,9 @@ class BusinessRepository implements InventoryInterface
 		return Business::all();
 	}
 
-	public function create(array $columns)
+	public function create(array $array)
 	{
-		return Business::create($columns);
+		return Business::create($array);
 	}
 
 	public function update(array $data, $id)

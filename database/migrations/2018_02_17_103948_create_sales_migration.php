@@ -22,19 +22,20 @@ class CreateSalesMigration extends Migration
             $table->double('total_amount', 8, 2);
             $table->double('total_base_amount', 8, 2);
             $table->string('customer_name');
-            $table->integer('item_id')->unassigned();
-            $table->integer('business_id')->unassigned();
+            $table->integer('item_id')->unsigned();
+            $table->integer('business_id')->unsigned();
             $table->timestamps();
+
+            $table->foreign('item_id')
+                ->references('id')
+                ->on('items')
+                ->onDelete('cascade');
 
             $table->foreign('business_id')
                 ->references('id')
                 ->on('businesses')
                 ->onDelete('cascade');
 
-            $table->foreign('item_id')
-                ->references('id')
-                ->on('items')
-                ->onDelete('cascade');
         });
     }
 

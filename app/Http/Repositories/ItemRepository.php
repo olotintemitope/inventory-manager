@@ -3,7 +3,7 @@
 namespace App\Http\Repositories;
 
 use App\Model\Item;
-use App\Repositories\Contract\InventoryInterface;
+use App\Http\Repositories\Contract\InventoryInterface;
 
 class ItemRepository implements InventoryInterface
 {
@@ -24,7 +24,7 @@ class ItemRepository implements InventoryInterface
 			->andWhere($columns);
     }
 
-	pubic function findWhere($field, $value)
+	public function findWhere($field, $value)
 	{
 		return Item::where($field, $value);
 	}

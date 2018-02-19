@@ -3,7 +3,7 @@
 namespace App\Http\Repositories;
 
 use App\Model\Sale;
-use App\Repositories\Contract\InventoryInterface;
+use App\Http\Repositories\Contract\InventoryInterface;
 
 class SaleRepository implements InventoryInterface
 {
@@ -18,13 +18,13 @@ class SaleRepository implements InventoryInterface
 			->where($columns);
 	}
  
-    public function findBy($field, $value, array $columns)
+    public function findBy($field, $value, $columns)
     {
     	return Sale::where($field, $value)
 			->andWhere($columns);
     }
 
-	pubic function findWhere($field, $value)
+	public function findWhere($field, $value)
 	{
 		return Sale::where($field, $value);
 	}
