@@ -59,7 +59,13 @@ class BusinessController extends Controller
     	$businesses = $this->businessRepository
     		->findAll();
 
-    	return $this->response->collection($users, new BusinessTransformer);
+    	return $this->response->collection($businesses, new BusinessTransformer);
     }
 
+    public function getBusiness($id)
+    {
+    	$business = $this->businessRepository->findById($id);
+
+    	return $this->response->item($business, new BusinessTransformer);
+    }
 }

@@ -45,6 +45,7 @@ $api->group($authParams, function($api) {
     // Create business endpoints
     $api->post('businesses', 'BusinessController@store');
     $api->get('businesses', 'BusinessController@getAll');
+    $api->get('businesses/{id}', 'BusinessController@getBusiness');
     // Authentication
 	$api->post('logout', 'AuthenticateController@logout');
 	$api->get('token', 'AuthenticateController@getToken');
