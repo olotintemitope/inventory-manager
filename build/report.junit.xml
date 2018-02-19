@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="tests" tests="5" assertions="16" failures="0" errors="0" time="1.273829">
+    <testsuite name="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" tests="5" assertions="16" failures="0" errors="0" time="1.273829">
+      <testcase name="testAuthenticateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="14" assertions="1" time="0.521044"/>
+      <testcase name="testCreateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="23" assertions="1" time="0.228028"/>
+      <testcase name="testUpdateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="37" assertions="1" time="0.216726"/>
+      <testcase name="testGetUsers" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="51" assertions="7" time="0.157803"/>
+      <testcase name="testGetUserById" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="66" assertions="6" time="0.150228"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
