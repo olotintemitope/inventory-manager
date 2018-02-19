@@ -113,6 +113,7 @@ class BusinessController extends Controller
 
     	if ($business) {
     		$business->save();
+  
     		return $this->response->noContent();
     	}
 

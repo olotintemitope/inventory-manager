@@ -2,6 +2,7 @@
 
 namespace Tests;
 
+use App\Model\User;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
@@ -25,5 +26,14 @@ abstract class TestCase extends BaseTestCase
 	    }
 
 	    return $headers;
+	}
+
+	public function testAuthenticateUser()
+    {
+        $user = factory(User::class)->create(['password' => 'password']);
+
+        $response = $this->json('POST', '/v1/authenticate', ['email' => $user->email, 'password' => 'password']);
+
+        $response->assertJsonStructure(['token']);
 	}
 }
