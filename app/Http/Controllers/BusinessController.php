@@ -54,4 +54,12 @@ class BusinessController extends Controller
     	return $this->response->errorBadRequest();
     }
 
+    public function getAll()
+    {
+    	$businesses = $this->businessRepository
+    		->findAll();
+
+    	return $this->response->collection($users, new BusinessTransformer);
+    }
+
 }
