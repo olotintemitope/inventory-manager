@@ -10,6 +10,7 @@ class BusinessTransformer extends TransformerAbstract
     public function transform(Business $business)
     {
         return [
+            'id' => $business->id,
             'name' => $business->name, 
             'country' => $business->country, 
             'state' => $business->state, 
