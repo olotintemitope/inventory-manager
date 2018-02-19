@@ -46,6 +46,7 @@ $api->group($authParams, function($api) {
     $api->post('businesses', 'BusinessController@store');
     $api->get('businesses', 'BusinessController@getAll');
     $api->get('businesses/{id}', 'BusinessController@getBusiness');
+    $api->put('users/{userId}/businesses/{id}', 'BusinessController@updateBusiness');
     // Authentication
 	$api->post('logout', 'AuthenticateController@logout');
 	$api->get('token', 'AuthenticateController@getToken');
