@@ -1,3 +1,13 @@
 TAP version 13
 ok 1 - Tests\Unit\BusinessControllerTest::testThatCreateBusinessWithoutUserFailed
 ok 2 - Tests\Unit\BusinessControllerTest::testCreateBusiness
+ok 3 - Tests\Unit\BusinessControllerTest::testUpdateBusiness
+ok 4 - Tests\Unit\BusinessControllerTest::testGetBusinesses
+ok 5 - Tests\Unit\BusinessControllerTest::testGetBusinessById
+ok 6 - Tests\Unit\BusinessControllerTest::testAuthenticateUser
+ok 7 - Tests\Unit\UserControllerTest::testCreateUser
+ok 8 - Tests\Unit\UserControllerTest::testUpdateUser
+ok 9 - Tests\Unit\UserControllerTest::testGetUsers
+ok 10 - Tests\Unit\UserControllerTest::testGetUserById
+ok 11 - Tests\Unit\UserControllerTest::testAuthenticateUser
+1..11

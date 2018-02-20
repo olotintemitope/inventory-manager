@@ -12,9 +12,9 @@ use App\Http\Repositories\UserRepository;
 
 class UserController extends Controller
 {
-	public $userRepository;
+    public $userRepository;
 
-	use Helpers;
+    use Helpers;
 
 	public function __construct(UserRepository $userRepository) 
 	{

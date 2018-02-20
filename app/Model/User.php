@@ -30,10 +30,8 @@ class User extends Authenticatable
 
     public function setPasswordAttribute($password)
     {
-        //if (Hash::needsRehash($password)) {
-            $password = bcrypt($password);
-            $this->attributes['password'] = $password;
-        //}
+        $password = bcrypt($password);
+        $this->attributes['password'] = $password;
     }
 
     public function businesses()
