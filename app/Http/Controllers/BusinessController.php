@@ -13,7 +13,6 @@ use App\Http\Requests\UpdateBusinessRequest;
 use App\Http\Repositories\BusinessRepository;
 use Dingo\Api\Exception\StoreResourceFailedException;
 use Dingo\Api\Exception\UpdateResourceFailedException;
-// use Dingo\Api\Exception\UpdateResourceFailedException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class BusinessController extends Controller
@@ -72,9 +71,11 @@ class BusinessController extends Controller
     	return $this->response->item($business, new BusinessTransformer);
     }
 
-    public function updateBusiness(UpdateBusinessRequest $request, $userId, $id)
+    public function updateBusiness(UpdateBusinessRequest $request, $id)
     {
     	$currentUser = null;
+        $requestBody = $request->all();
+        $userId = $requestBody['user_id'];
     	$user = $this->userRepository->findById($userId);
 
     	if ($user instanceof User) {

@@ -48,11 +48,11 @@ class BusinessControllerTest extends TestCase
         $business = factory(Business::class)->create();
 
         $businessPayload = [
-            'name' => 'Employer', 'country' => 'Nigeria', 'state' => 'Lagos', 
-            'timezone' => 'Africa/Lagos', 'currency' => 'NGN'
+            'user_id' => 1, 'name' => 'Employer', 'country' => 'Nigeria', 
+            'state' => 'Lagos', 'timezone' => 'Africa/Lagos', 'currency' => 'NGN'
         ];
 
-        $response = $this->json('PUT', '/v1/users/1/businesses/1', $businessPayload, $this->headers($user));
+        $response = $this->json('PUT', '/v1/businesses/1', $businessPayload, $this->headers($user));
 
         $response->assertStatus(204);
 	}

@@ -46,7 +46,12 @@ $api->group($authParams, function($api) {
     $api->post('businesses', 'BusinessController@store');
     $api->get('businesses', 'BusinessController@getAll');
     $api->get('businesses/{id}', 'BusinessController@getBusiness');
-    $api->put('users/{userId}/businesses/{id}', 'BusinessController@updateBusiness');
+    $api->put('businesses/{id}', 'BusinessController@updateBusiness');
+    // Create category endpoints
+    $api->post('categories', 'CategoryController@store');
+    $api->get('categories', 'CategoryController@getAll');
+    $api->get('categories/{id}', 'CategoryController@getCategory');
+    $api->put('categories/{id}', 'CategoryController@updateCategory');
     // Authentication
 	$api->post('logout', 'AuthenticateController@logout');
 	$api->get('token', 'AuthenticateController@getToken');
