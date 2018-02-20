@@ -4,7 +4,7 @@ namespace App\Transformers;
 
 use App\Model\Item;
 use League\Fractal\TransformerAbstract;
-use App\Transformers\CategoryTransformer;
+use App\Transformers\CategoryWithOutEagerLoadingTransformer;
 
 class ItemTransformer extends TransformerAbstract
 {
@@ -34,6 +34,6 @@ class ItemTransformer extends TransformerAbstract
     {
         $category = $item->category;
 
-        return $this->item($category, new CategoryTransformer);
+        return $this->item($category, new CategoryWithOutEagerLoadingTransformer);
     }
 }

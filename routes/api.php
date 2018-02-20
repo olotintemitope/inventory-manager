@@ -52,6 +52,11 @@ $api->group($authParams, function($api) {
     $api->get('categories', 'CategoryController@getAll');
     $api->get('categories/{id}', 'CategoryController@getCategory');
     $api->put('categories/{id}', 'CategoryController@updateCategory');
+    // Create item endpoints
+    $api->post('items', 'ItemController@store');
+    $api->get('items', 'ItemController@getAll');
+    $api->get('items/{id}', 'ItemController@getItem');
+    $api->put('items/{id}', 'ItemController@updateItem');
     // Authentication
 	$api->post('logout', 'AuthenticateController@logout');
 	$api->get('token', 'AuthenticateController@getToken');
