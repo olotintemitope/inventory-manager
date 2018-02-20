@@ -164,6 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        Swap\Laravel\SwapServiceProvider::class,
         //
 
         /*
@@ -229,6 +230,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'Swap' => Swap\Laravel\Facades\Swap::class,
 
     ],
 
