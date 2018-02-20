@@ -32,6 +32,6 @@ class Business extends Model
 
     public function sales()
     {
-    	return $this->hasMany('App\Model\Sale');
+    	return $this->hasMany('App\Model\Sales');
     }
 }

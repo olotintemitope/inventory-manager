@@ -4,7 +4,7 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Sale extends Model
+class Sales extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -12,7 +12,8 @@ class Sale extends Model
      * @var array
      */
     protected $fillable = [
-        'business_id', 'item_id', 'price', 'quantity', 'total_vat', 'total_quantity', 'total_amount', 'total_base_amount', 'customer_name'
+        'business_id', 'item_id', 'price', 'quantity', 'total_vat', 
+        'total_quantity', 'total_amount', 'total_base_amount', 'customer_name'
     ];
 
     public function business()
