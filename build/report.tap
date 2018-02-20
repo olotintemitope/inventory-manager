@@ -16,9 +16,13 @@ ok 14 - Tests\Unit\CategoryControllerTest::testUpdateCategory
 ok 15 - Tests\Unit\CategoryControllerTest::testGetCategories
 ok 16 - Tests\Unit\CategoryControllerTest::testGetCategoryById
 ok 17 - Tests\Unit\CategoryControllerTest::testAuthenticateUser
-ok 18 - Tests\Unit\UserControllerTest::testCreateUser
-ok 19 - Tests\Unit\UserControllerTest::testUpdateUser
-ok 20 - Tests\Unit\UserControllerTest::testGetUsers
-ok 21 - Tests\Unit\UserControllerTest::testGetUserById
-ok 22 - Tests\Unit\UserControllerTest::testAuthenticateUser
-1..22
+ok 18 - Tests\Unit\SalesControllerTest::testThatCreateSalesWithoutBusinessFailed
+ok 19 - Tests\Unit\SalesControllerTest::testCreateSales
+ok 20 - Tests\Unit\SalesControllerTest::testGetSales
+ok 21 - Tests\Unit\SalesControllerTest::testAuthenticateUser
+ok 22 - Tests\Unit\UserControllerTest::testCreateUser
+ok 23 - Tests\Unit\UserControllerTest::testUpdateUser
+ok 24 - Tests\Unit\UserControllerTest::testGetUsers
+ok 25 - Tests\Unit\UserControllerTest::testGetUserById
+ok 26 - Tests\Unit\UserControllerTest::testAuthenticateUser
+1..26

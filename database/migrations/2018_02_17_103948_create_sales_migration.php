@@ -15,12 +15,12 @@ class CreateSalesMigration extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->increments('id');
-            $table->double('price', 8, 2);
+            $table->double('price');
             $table->integer('quantity');
-            $table->double('total_vat', 8, 2);
-            $table->integer('total_quantity');
-            $table->double('total_amount', 8, 2);
-            $table->double('total_base_amount', 8, 2);
+            $table->double('total_vat')->default(0.00);
+            $table->integer('total_quantity')->default(0.00);
+            $table->double('total_amount')->default(0.00);
+            $table->double('total_base_amount')->default(0.00);
             $table->string('customer_name');
             $table->integer('item_id')->unsigned();
             $table->integer('business_id')->unsigned();

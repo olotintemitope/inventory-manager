@@ -20,7 +20,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class ItemController extends Controller
 {
     public $businessRepository;
-    public $userRepository;
+    public $itemRepository;
     public $categoryRepository;
 
 	use Helpers;

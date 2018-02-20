@@ -2,46 +2,46 @@
 
 namespace App\Http\Repositories;
 
-use App\Model\Sale;
+use App\Model\Sales;
 use App\Http\Repositories\Contract\InventoryInterface;
 
-class SaleRepository implements InventoryInterface
+class SalesRepository implements InventoryInterface
 {
 	public function findById($id)
 	{
-		return Sale::find($id);
+		return Sales::find($id);
 	}
 
 	public function find($id, $columns)
 	{
-		return Sale::find($id)
+		return Sales::find($id)
 			->where($columns);
 	}
  
     public function findBy($field, $value, $columns)
     {
-    	return Sale::where($field, $value)
+    	return Sales::where($field, $value)
 			->andWhere($columns);
     }
 
 	public function findWhere($field, $value)
 	{
-		return Sale::where($field, $value);
+		return Sales::where($field, $value);
 	}
 
 	public function findAll()
 	{
-		return Sale::all();
+		return Sales::all();
 	}
 
 	public function create(array $array)
 	{
-		return Sale::create($array);
+		return Sales::create($array);
 	}
 
 	public function update(array $data, $id)
 	{
-		return Sale::find($id)
+		return Sales::find($id)
 			->update($data);
 	}
 }

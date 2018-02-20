@@ -58,7 +58,7 @@ $factory->define(App\Model\Item::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Model\Sale::class, function (Faker\Generator $faker) {
+$factory->define(App\Model\Sales::class, function (Faker\Generator $faker) {
 
     return [
         'item_id' => 1,
