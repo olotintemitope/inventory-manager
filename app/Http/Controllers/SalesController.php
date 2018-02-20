@@ -64,7 +64,11 @@ class SalesController extends Controller
     		}
     	}
 
-    	return $this->response->created();
+    	if ($sales) {
+    		return $this->response->created();
+    	}
+
+    	return $this->response->errorBadRequest();
     }
 
     public function getSales(Request $request, $id)
