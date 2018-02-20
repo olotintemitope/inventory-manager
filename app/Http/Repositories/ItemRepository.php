@@ -21,7 +21,7 @@ class ItemRepository implements InventoryInterface
     public function findBy($field, $value, $columns)
     {
     	return Item::where($field, $value)
-			->andWhere($columns);
+			->where($columns);
     }
 
 	public function findWhere($field, $value)
