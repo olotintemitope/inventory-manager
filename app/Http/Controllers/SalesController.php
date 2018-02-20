@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Validator;
+use Carbon\Carbon;
 use App\Model\Item;
 use App\Model\Business;
 use Illuminate\Http\Request;
 use Dingo\Api\Routing\Helpers;
+use App\Transformers\SalesTransformer;
 use App\Http\Repositories\ItemRepository;
 use App\Http\Repositories\SalesRepository;
 use App\Http\Repositories\BusinessRepository;
@@ -63,6 +65,36 @@ class SalesController extends Controller
     	}
 
     	return $this->response->created();
+    }
+
+    public function getSales(Request $request, $id)
+    {
+    	$baseCurrency = null;
+		$business = $this->businessRepository->findById($id);
+
+    	if (!$business instanceof Business) {
+    		throw new StoreResourceFailedException('Business not found');
+    	}
+
+    	$sales = $this->salesRepository
+			->findWhere('business_id', $id);
+		// check if dates search is enable through query params
+		if ($request->has('dateFrom') && $request->has('dateTo')) {
+			$dateFrom = new Carbon($request->get('dateFrom'));
+			$dateTo = new Carbon($request->get('dateTo'));
+
+			$sales->whereBetween('created_at', [
+				$dateFrom->format('Y-m-d'). ' 00:00:00', $dateTo->format('Y-m-d'). ' 23:59:59'
+			]);
+		}
+
+		if ($request->has('base_currency')) {
+			$baseCurrency = $request->get('base_currency');
+		}
+
+
+
+    	return $this->response->collection($sales->get(), new SalesTransformer($baseCurrency));
     }
 
     public function updateItem($sales, $item, $itemData)
