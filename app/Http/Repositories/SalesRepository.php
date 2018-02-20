@@ -5,7 +5,7 @@ namespace App\Http\Repositories;
 use App\Model\Sale;
 use App\Http\Repositories\Contract\InventoryInterface;
 
-class SaleRepository implements InventoryInterface
+class SalesRepository implements InventoryInterface
 {
 	public function findById($id)
 	{

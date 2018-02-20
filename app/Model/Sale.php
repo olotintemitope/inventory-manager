@@ -12,7 +12,7 @@ class Sale extends Model
      * @var array
      */
     protected $fillable = [
-        'business_id', 'item_id', 'name', 'price', 'quantity', 'total_vat', 'total_quantity', 'total_amount', 'total_base_amount', 'customer_name'
+        'business_id', 'item_id', 'price', 'quantity', 'total_vat', 'total_quantity', 'total_amount', 'total_base_amount', 'customer_name'
     ];
 
     public function business()

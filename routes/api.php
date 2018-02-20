@@ -57,6 +57,8 @@ $api->group($authParams, function($api) {
     $api->get('items', 'ItemController@getAll');
     $api->get('items/{id}', 'ItemController@getItem');
     $api->put('items/{id}', 'ItemController@updateItem');
+    // Create sales endpoints
+    $api->post('sales', 'SalesController@store');
     // Authentication
 	$api->post('logout', 'AuthenticateController@logout');
 	$api->get('token', 'AuthenticateController@getToken');
