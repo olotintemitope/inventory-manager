@@ -5,9 +5,14 @@ ok 3 - Tests\Unit\BusinessControllerTest::testUpdateBusiness
 ok 4 - Tests\Unit\BusinessControllerTest::testGetBusinesses
 ok 5 - Tests\Unit\BusinessControllerTest::testGetBusinessById
 ok 6 - Tests\Unit\BusinessControllerTest::testAuthenticateUser
-ok 7 - Tests\Unit\UserControllerTest::testCreateUser
-ok 8 - Tests\Unit\UserControllerTest::testUpdateUser
-ok 9 - Tests\Unit\UserControllerTest::testGetUsers
-ok 10 - Tests\Unit\UserControllerTest::testGetUserById
-ok 11 - Tests\Unit\UserControllerTest::testAuthenticateUser
-1..11
+ok 7 - Tests\Unit\CategoryControllerTest::testCreateCategory
+ok 8 - Tests\Unit\CategoryControllerTest::testUpdateCategory
+ok 9 - Tests\Unit\CategoryControllerTest::testGetCategories
+ok 10 - Tests\Unit\CategoryControllerTest::testGetCategoryById
+ok 11 - Tests\Unit\CategoryControllerTest::testAuthenticateUser
+ok 12 - Tests\Unit\UserControllerTest::testCreateUser
+ok 13 - Tests\Unit\UserControllerTest::testUpdateUser
+ok 14 - Tests\Unit\UserControllerTest::testGetUsers
+ok 15 - Tests\Unit\UserControllerTest::testGetUserById
+ok 16 - Tests\Unit\UserControllerTest::testAuthenticateUser
+1..16

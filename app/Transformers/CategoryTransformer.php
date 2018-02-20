@@ -4,6 +4,7 @@ namespace App\Transformers;
 
 use App\Model\Category;
 use League\Fractal\TransformerAbstract;
+use App\Transformers\BusinessTransformer;
 use App\Transformers\ItemWithoutCategoryTransformer;
 
 class CategoryTransformer extends TransformerAbstract

@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="tests" tests="11" assertions="29" failures="0" errors="0" time="2.133616">
-    <testsuite name="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" tests="6" assertions="13" failures="0" errors="0" time="1.208273">
-      <testcase name="testThatCreateBusinessWithoutUserFailed" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="15" assertions="1" time="0.410169"/>
-      <testcase name="testCreateBusiness" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="30" assertions="1" time="0.143728"/>
-      <testcase name="testUpdateBusiness" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="45" assertions="1" time="0.148670"/>
-      <testcase name="testGetBusinesses" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="60" assertions="2" time="0.147705"/>
-      <testcase name="testGetBusinessById" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="75" assertions="7" time="0.148282"/>
-      <testcase name="testAuthenticateUser" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="31" assertions="1" time="0.209719"/>
+  <testsuite name="tests" tests="16" assertions="38" failures="0" errors="0" time="2.955689">
+    <testsuite name="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" tests="6" assertions="13" failures="0" errors="0" time="1.195421">
+      <testcase name="testThatCreateBusinessWithoutUserFailed" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="15" assertions="1" time="0.388882"/>
+      <testcase name="testCreateBusiness" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="30" assertions="1" time="0.144497"/>
+      <testcase name="testUpdateBusiness" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="45" assertions="1" time="0.151805"/>
+      <testcase name="testGetBusinesses" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="60" assertions="2" time="0.155606"/>
+      <testcase name="testGetBusinessById" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="75" assertions="7" time="0.142007"/>
+      <testcase name="testAuthenticateUser" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="31" assertions="1" time="0.212624"/>
     </testsuite>
-    <testsuite name="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" tests="5" assertions="16" failures="0" errors="0" time="0.925343">
-      <testcase name="testCreateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="14" assertions="1" time="0.209095"/>
-      <testcase name="testUpdateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="28" assertions="1" time="0.213300"/>
-      <testcase name="testGetUsers" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="42" assertions="7" time="0.149471"/>
-      <testcase name="testGetUserById" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="57" assertions="6" time="0.146837"/>
-      <testcase name="testAuthenticateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="31" assertions="1" time="0.206640"/>
+    <testsuite name="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" tests="5" assertions="9" failures="0" errors="0" time="0.808884">
+      <testcase name="testCreateCategory" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="16" assertions="1" time="0.146356"/>
+      <testcase name="testUpdateCategory" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="30" assertions="1" time="0.147091"/>
+      <testcase name="testGetCategories" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="46" assertions="2" time="0.145901"/>
+      <testcase name="testGetCategoryById" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="61" assertions="4" time="0.153423"/>
+      <testcase name="testAuthenticateUser" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="31" assertions="1" time="0.216113"/>
+    </testsuite>
+    <testsuite name="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" tests="5" assertions="16" failures="0" errors="0" time="0.951384">
+      <testcase name="testCreateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="14" assertions="1" time="0.215712"/>
+      <testcase name="testUpdateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="28" assertions="1" time="0.212799"/>
+      <testcase name="testGetUsers" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="42" assertions="7" time="0.154083"/>
+      <testcase name="testGetUserById" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="57" assertions="6" time="0.147303"/>
+      <testcase name="testAuthenticateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="31" assertions="1" time="0.221487"/>
     </testsuite>
   </testsuite>
 </testsuites>
