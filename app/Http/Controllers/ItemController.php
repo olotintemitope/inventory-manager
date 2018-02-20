@@ -108,31 +108,43 @@ class ItemController extends Controller
     		throw new UpdateResourceFailedException("Business with this id is not authorized to update this item");
     	}
     	// don't update all the fields but only update the available ones
- 		if (array_key_exists('description', $request->all())) {
-    		$item->description = $request->all()['description'];
-    	}
-    	if (array_key_exists('logo_url', $request->all())) {
-    		$item->logo_url = $request->all()['logo_url'];
-    	}
-    	if (array_key_exists('price', $request->all())) {
-    		$item->price = $request->all()['price'];
-    	}
-    	if (array_key_exists('quantity', $request->all())) {
-    		$item->quantity = $request->all()['quantity'];
-    	}
-    	if (array_key_exists('vat', $request->all())) {
-    		$item->vat = $request->all()['vat'];
-    	}
-
+    	$item = $this->persistItem($request, $item);
     	if ($item) {
-    		$item->name = $request->all()['name'];
-    		$item->business_id = $request->all()['business_id'];
-    		$item->category_id = $request->all()['category_id'];
     		$item->save();
   
     		return $this->response->noContent();
     	}
 
     	return $this->response->errorBadRequest();
+    }
+
+    public function persistItem($request, $item)
+    {
+    	// don't update all the fields but only update the available ones
+ 		if (array_key_exists('description', $request->all())) {
+    		$item->description = $request->all()['description'];
+    	}
+
+    	if (array_key_exists('logo_url', $request->all())) {
+    		$item->logo_url = $request->all()['logo_url'];
+    	}
+
+    	if (array_key_exists('price', $request->all())) {
+    		$item->price = $request->all()['price'];
+    	}
+
+    	if (array_key_exists('quantity', $request->all())) {
+    		$item->quantity = $request->all()['quantity'];
+    	}
+
+    	if (array_key_exists('vat', $request->all())) {
+    		$item->vat = $request->all()['vat'];
+    	}
+
+    	$item->name = $request->all()['name'];
+		$item->business_id = $request->all()['business_id'];
+		$item->category_id = $request->all()['category_id'];
+
+    	return $item;
     }
 }
