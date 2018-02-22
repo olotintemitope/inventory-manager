@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="tests" tests="26" assertions="0" failures="0" errors="26" time="0.721433">
-    <testsuite name="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" tests="6" assertions="0" failures="0" errors="6" time="0.333055">
-      <testcase name="testThatCreateBusinessWithoutUserFailed" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="15" assertions="0" time="0.247385">
+  <testsuite name="tests" tests="26" assertions="0" failures="0" errors="26" time="0.688991">
+    <testsuite name="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" tests="6" assertions="0" failures="0" errors="6" time="0.295170">
+      <testcase name="testThatCreateBusinessWithoutUserFailed" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="15" assertions="0" time="0.208239">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\BusinessControllerTest::testThatCreateBusinessWithoutUserFailed
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -32,7 +32,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testCreateBusiness" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="30" assertions="0" time="0.015676">
+      <testcase name="testCreateBusiness" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="30" assertions="0" time="0.018409">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\BusinessControllerTest::testCreateBusiness
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -62,7 +62,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testUpdateBusiness" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="45" assertions="0" time="0.015842">
+      <testcase name="testUpdateBusiness" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="45" assertions="0" time="0.017302">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\BusinessControllerTest::testUpdateBusiness
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -92,7 +92,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testGetBusinesses" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="60" assertions="0" time="0.019401">
+      <testcase name="testGetBusinesses" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="60" assertions="0" time="0.017059">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\BusinessControllerTest::testGetBusinesses
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -122,7 +122,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testGetBusinessById" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="75" assertions="0" time="0.017069">
+      <testcase name="testGetBusinessById" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="75" assertions="0" time="0.017255">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\BusinessControllerTest::testGetBusinessById
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -152,7 +152,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testAuthenticateUser" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="31" assertions="0" time="0.017682">
+      <testcase name="testAuthenticateUser" class="Tests\Unit\BusinessControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/BusinessControllerTest.php" line="31" assertions="0" time="0.016906">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\BusinessControllerTest::testAuthenticateUser
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -183,8 +183,8 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 </error>
       </testcase>
     </testsuite>
-    <testsuite name="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" tests="5" assertions="0" failures="0" errors="5" time="0.096864">
-      <testcase name="testCreateCategory" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="16" assertions="0" time="0.018165">
+    <testsuite name="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" tests="5" assertions="0" failures="0" errors="5" time="0.111106">
+      <testcase name="testCreateCategory" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="16" assertions="0" time="0.025919">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\CategoryControllerTest::testCreateCategory
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -214,7 +214,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testUpdateCategory" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="30" assertions="0" time="0.022250">
+      <testcase name="testUpdateCategory" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="30" assertions="0" time="0.031073">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\CategoryControllerTest::testUpdateCategory
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -244,7 +244,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testGetCategories" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="46" assertions="0" time="0.019866">
+      <testcase name="testGetCategories" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="46" assertions="0" time="0.018314">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\CategoryControllerTest::testGetCategories
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -274,7 +274,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testGetCategoryById" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="61" assertions="0" time="0.020079">
+      <testcase name="testGetCategoryById" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="61" assertions="0" time="0.017814">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\CategoryControllerTest::testGetCategoryById
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -304,7 +304,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testAuthenticateUser" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="31" assertions="0" time="0.016504">
+      <testcase name="testAuthenticateUser" class="Tests\Unit\CategoryControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/CategoryControllerTest.php" line="31" assertions="0" time="0.017986">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\CategoryControllerTest::testAuthenticateUser
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -335,8 +335,8 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 </error>
       </testcase>
     </testsuite>
-    <testsuite name="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" tests="6" assertions="0" failures="0" errors="6" time="0.107590">
-      <testcase name="testThatCreateItemWithoutUserFailed" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="17" assertions="0" time="0.018263">
+    <testsuite name="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" tests="6" assertions="0" failures="0" errors="6" time="0.104798">
+      <testcase name="testThatCreateItemWithoutUserFailed" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="17" assertions="0" time="0.017499">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\ItemControllerTest::testThatCreateItemWithoutUserFailed
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -366,7 +366,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testCreateItem" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="39" assertions="0" time="0.018157">
+      <testcase name="testCreateItem" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="39" assertions="0" time="0.017238">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\ItemControllerTest::testCreateItem
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -396,7 +396,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testUpdateItem" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="61" assertions="0" time="0.017372">
+      <testcase name="testUpdateItem" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="61" assertions="0" time="0.018324">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\ItemControllerTest::testUpdateItem
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -426,7 +426,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testGetItems" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="81" assertions="0" time="0.017650">
+      <testcase name="testGetItems" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="81" assertions="0" time="0.016163">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\ItemControllerTest::testGetItems
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -456,7 +456,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testGetItemById" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="102" assertions="0" time="0.017566">
+      <testcase name="testGetItemById" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="102" assertions="0" time="0.016718">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\ItemControllerTest::testGetItemById
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -486,7 +486,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testAuthenticateUser" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="31" assertions="0" time="0.018582">
+      <testcase name="testAuthenticateUser" class="Tests\Unit\ItemControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/ItemControllerTest.php" line="31" assertions="0" time="0.018856">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\ItemControllerTest::testAuthenticateUser
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -517,8 +517,8 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 </error>
       </testcase>
     </testsuite>
-    <testsuite name="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" tests="4" assertions="0" failures="0" errors="4" time="0.077466">
-      <testcase name="testThatCreateSalesWithoutBusinessFailed" class="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" line="16" assertions="0" time="0.016519">
+    <testsuite name="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" tests="4" assertions="0" failures="0" errors="4" time="0.071262">
+      <testcase name="testThatCreateSalesWithoutBusinessFailed" class="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" line="16" assertions="0" time="0.016731">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\SalesControllerTest::testThatCreateSalesWithoutBusinessFailed
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -548,7 +548,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testCreateSales" class="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" line="37" assertions="0" time="0.019221">
+      <testcase name="testCreateSales" class="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" line="37" assertions="0" time="0.018632">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\SalesControllerTest::testCreateSales
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -578,7 +578,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testGetSales" class="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" line="58" assertions="0" time="0.021430">
+      <testcase name="testGetSales" class="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" line="58" assertions="0" time="0.017505">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\SalesControllerTest::testGetSales
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -608,7 +608,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testAuthenticateUser" class="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" line="31" assertions="0" time="0.020296">
+      <testcase name="testAuthenticateUser" class="Tests\Unit\SalesControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/SalesControllerTest.php" line="31" assertions="0" time="0.018394">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\SalesControllerTest::testAuthenticateUser
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -639,8 +639,8 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 </error>
       </testcase>
     </testsuite>
-    <testsuite name="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" tests="5" assertions="0" failures="0" errors="5" time="0.106459">
-      <testcase name="testCreateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="14" assertions="0" time="0.018464">
+    <testsuite name="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" tests="5" assertions="0" failures="0" errors="5" time="0.106655">
+      <testcase name="testCreateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="14" assertions="0" time="0.017302">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\UserControllerTest::testCreateUser
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -670,7 +670,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testUpdateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="28" assertions="0" time="0.024105">
+      <testcase name="testUpdateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="28" assertions="0" time="0.018098">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\UserControllerTest::testUpdateUser
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -700,7 +700,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testGetUsers" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="42" assertions="0" time="0.020050">
+      <testcase name="testGetUsers" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="42" assertions="0" time="0.017031">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\UserControllerTest::testGetUsers
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -730,7 +730,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testGetUserById" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="57" assertions="0" time="0.026603">
+      <testcase name="testGetUserById" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="57" assertions="0" time="0.037759">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\UserControllerTest::testGetUserById
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
@@ -760,7 +760,7 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (S
 /Users/temitopeolotin/Code/inventory-manager/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:69
 </error>
       </testcase>
-      <testcase name="testAuthenticateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="31" assertions="0" time="0.017237">
+      <testcase name="testAuthenticateUser" class="Tests\Unit\UserControllerTest" file="/Users/temitopeolotin/Code/inventory-manager/tests/Unit/UserControllerTest.php" line="31" assertions="0" time="0.016465">
         <error type="PHPUnit_Framework_ExceptionWrapper">Tests\Unit\UserControllerTest::testAuthenticateUser
 Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] Connection refused (SQL: select * from information_schema.tables where table_schema = inventory_manager and table_name = migrations)
 
