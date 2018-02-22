@@ -6,6 +6,12 @@ php:
   - 7.0
   - hhvm
 
+before_script:
+  - cp .env.travis .env
+  - mysql -e 'create database inventory_manager;'
+  - composer self-update
+  - composer install --no-interaction
+
 matrix:
   allow_failures:
     - php: 7.0
