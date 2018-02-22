@@ -1,28 +1,28 @@
 TAP version 13
-ok 1 - Tests\Unit\ItemControllerTest::testThatCreateItemWithoutUserFailed
-ok 2 - Tests\Unit\ItemControllerTest::testCreateItem
-ok 3 - Tests\Unit\ItemControllerTest::testUpdateItem
-ok 4 - Tests\Unit\ItemControllerTest::testGetItems
-ok 5 - Tests\Unit\ItemControllerTest::testGetItemById
-ok 6 - Tests\Unit\ItemControllerTest::testAuthenticateUser
-ok 7 - Tests\Unit\BusinessControllerTest::testThatCreateBusinessWithoutUserFailed
-ok 8 - Tests\Unit\BusinessControllerTest::testCreateBusiness
-ok 9 - Tests\Unit\BusinessControllerTest::testUpdateBusiness
-ok 10 - Tests\Unit\BusinessControllerTest::testGetBusinesses
-ok 11 - Tests\Unit\BusinessControllerTest::testGetBusinessById
-ok 12 - Tests\Unit\BusinessControllerTest::testAuthenticateUser
-ok 13 - Tests\Unit\CategoryControllerTest::testCreateCategory
-ok 14 - Tests\Unit\CategoryControllerTest::testUpdateCategory
-ok 15 - Tests\Unit\CategoryControllerTest::testGetCategories
-ok 16 - Tests\Unit\CategoryControllerTest::testGetCategoryById
-ok 17 - Tests\Unit\CategoryControllerTest::testAuthenticateUser
-ok 18 - Tests\Unit\SalesControllerTest::testThatCreateSalesWithoutBusinessFailed
-ok 19 - Tests\Unit\SalesControllerTest::testCreateSales
-ok 20 - Tests\Unit\SalesControllerTest::testGetSales
-ok 21 - Tests\Unit\SalesControllerTest::testAuthenticateUser
-ok 22 - Tests\Unit\UserControllerTest::testCreateUser
-ok 23 - Tests\Unit\UserControllerTest::testUpdateUser
-ok 24 - Tests\Unit\UserControllerTest::testGetUsers
-ok 25 - Tests\Unit\UserControllerTest::testGetUserById
-ok 26 - Tests\Unit\UserControllerTest::testAuthenticateUser
+not ok 1 - Error: Tests\Unit\BusinessControllerTest::testThatCreateBusinessWithoutUserFailed
+not ok 2 - Error: Tests\Unit\BusinessControllerTest::testCreateBusiness
+not ok 3 - Error: Tests\Unit\BusinessControllerTest::testUpdateBusiness
+not ok 4 - Error: Tests\Unit\BusinessControllerTest::testGetBusinesses
+not ok 5 - Error: Tests\Unit\BusinessControllerTest::testGetBusinessById
+not ok 6 - Error: Tests\Unit\BusinessControllerTest::testAuthenticateUser
+not ok 7 - Error: Tests\Unit\CategoryControllerTest::testCreateCategory
+not ok 8 - Error: Tests\Unit\CategoryControllerTest::testUpdateCategory
+not ok 9 - Error: Tests\Unit\CategoryControllerTest::testGetCategories
+not ok 10 - Error: Tests\Unit\CategoryControllerTest::testGetCategoryById
+not ok 11 - Error: Tests\Unit\CategoryControllerTest::testAuthenticateUser
+not ok 12 - Error: Tests\Unit\ItemControllerTest::testThatCreateItemWithoutUserFailed
+not ok 13 - Error: Tests\Unit\ItemControllerTest::testCreateItem
+not ok 14 - Error: Tests\Unit\ItemControllerTest::testUpdateItem
+not ok 15 - Error: Tests\Unit\ItemControllerTest::testGetItems
+not ok 16 - Error: Tests\Unit\ItemControllerTest::testGetItemById
+not ok 17 - Error: Tests\Unit\ItemControllerTest::testAuthenticateUser
+not ok 18 - Error: Tests\Unit\SalesControllerTest::testThatCreateSalesWithoutBusinessFailed
+not ok 19 - Error: Tests\Unit\SalesControllerTest::testCreateSales
+not ok 20 - Error: Tests\Unit\SalesControllerTest::testGetSales
+not ok 21 - Error: Tests\Unit\SalesControllerTest::testAuthenticateUser
+not ok 22 - Error: Tests\Unit\UserControllerTest::testCreateUser
+not ok 23 - Error: Tests\Unit\UserControllerTest::testUpdateUser
+not ok 24 - Error: Tests\Unit\UserControllerTest::testGetUsers
+not ok 25 - Error: Tests\Unit\UserControllerTest::testGetUserById
+not ok 26 - Error: Tests\Unit\UserControllerTest::testAuthenticateUser
 1..26
