@@ -11,7 +11,7 @@
 
 This is an Inventory management for POS(point of sales) using PHP/Laravel for building a RESTful API that will help shop owners to manage their inventory.
 
-## API DOCUMENTATION
+## Api Documentation
 - https://documenter.getpostman.com/view/3781859/inventory-manager/RVg28T5R#e7a12353-77c0-5922-dead-93e28666f0c4
 
 ### Resources
