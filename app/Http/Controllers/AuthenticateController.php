@@ -9,13 +9,6 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 
 class AuthenticateController extends Controller
 {
-    /**
-     *  API Login, on success return JWT Auth token
-     *
-     * @param \Illuminate\Http\Request $request
-     *
-     * @return \Illuminate\Http\JsonResponse
-     */
     public function authenticate(Request $request)
     {
         // grab credentials from the request
