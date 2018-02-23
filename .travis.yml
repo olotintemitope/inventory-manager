@@ -5,6 +5,12 @@ php:
   - 7.0
   - hhvm
 
+env:
+  - DB=mysql
+
+services:
+  - mysql
+
 before_script:
   - cp .env.travis .env
   - mysql -e 'create database inventory_manager;'
