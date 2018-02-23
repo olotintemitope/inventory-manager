@@ -11,8 +11,6 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class CategoryControllerTest extends TestCase
 {
-	//use DatabaseMigrations;
-
 	public function testCreateCategory()
     {
         $user = factory(User::class)->create(['password' => 'password']);

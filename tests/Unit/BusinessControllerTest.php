@@ -10,8 +10,6 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class BusinessControllerTest extends TestCase
 {
-	//use DatabaseMigrations;
-
     public function testThatCreateBusinessWithoutUserFailed()
     {
         $business = factory(Business::class)->create();

@@ -11,11 +11,8 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class SalesControllerTest extends TestCase
 {
-	//use DatabaseMigrations;
-
     public function testThatCreateSalesWithoutBusinessFailed()
     {
-
         $business = factory(Business::class)->create();
         $item = factory(Item::class)->create(['business_id' => $business->id]);
         $user = factory(User::class)->create(['password' => 'password']);

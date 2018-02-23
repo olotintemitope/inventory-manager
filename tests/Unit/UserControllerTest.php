@@ -9,8 +9,6 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class UserControllerTest extends TestCase
 {
-	//use DatabaseMigrations;
-
 	public function testCreateUser()
     {
         $user = factory(User::class)->create(['password' => 'password']);

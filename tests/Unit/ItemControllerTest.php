@@ -12,8 +12,6 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ItemControllerTest extends TestCase
 {
-	//use DatabaseMigrations;
-
     public function testThatCreateItemWithoutUserFailed()
     {
         $business = factory(Business::class)->create();

@@ -17,7 +17,7 @@
 //     return $request->user();
 // });
 
-$api = app('api.router');//app('Dingo\Api\Routing\Router');
+$api = app('Dingo\Api\Routing\Router');
 
 $authParams = [
     'as' => 'api::',
