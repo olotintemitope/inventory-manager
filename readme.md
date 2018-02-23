@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/andela-tolotin/inventory-manager.svg?branch=master)](https://travis-ci.org/andela-tolotin/inventory-manager)
 
+[![Coverage Status](https://coveralls.io/repos/github/andela-tolotin/inventory-manager/badge.svg?branch=master)](https://coveralls.io/github/andela-tolotin/inventory-manager?branch=master)
+
 ## About Inventory Manager
 
 This is an Inventory management for POS(point of sales) using PHP/Laravel for building a RESTful API that will help shop owners to manage their inventory.
