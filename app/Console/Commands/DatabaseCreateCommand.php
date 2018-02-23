@@ -34,7 +34,7 @@ class DatabaseCreateCommand extends Command
      */
     public function fire()
     {
-        $database = env('DB_DATABASE', false);
+        $database = env('DB_TEST_DATABASE', false);
 
         if (! $database) {
             $this->info('Skipping creation of database as env(DB_DATABASE) is empty');
@@ -42,7 +42,7 @@ class DatabaseCreateCommand extends Command
         }
 
         try {
-            $pdo = $this->getPDOConnection(env('DB_HOST'), env('DB_PORT'), env('DB_USERNAME'), env('DB_PASSWORD'));
+            $pdo = $this->getPDOConnection(env('DB_TEST_HOST'), env('DB_TEST_PORT'), env('DB_TEST_USERNAME'), env('DB_TEST_PASSWORD'));
 
             $pdo->exec(sprintf(
                 'CREATE DATABASE IF NOT EXISTS %s CHARACTER SET %s COLLATE %s;',
