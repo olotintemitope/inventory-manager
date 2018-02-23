@@ -14,8 +14,11 @@ class UserControllerTest extends TestCase
         $user = factory(User::class)->create(['password' => 'password']);
 
         $userPayload = [
-        	'firstname' => 'edited firstname', 'lastname' => 'edited lastname',
-        	'gender' => 'female', 'email' => 'mynewpasword@gmail.com', 'password' => 'passcode'
+        	'firstname' => 'edited firstname', 
+            'lastname' => 'edited lastname',
+        	'gender' => 'female', 
+            'email' => 'mynewpasword'.rand(10, 500).'@gmail.com', 
+            'password' => 'passcode'
         ];
 
         $response = $this->json('POST', '/v1/users', $userPayload, $this->headers($user));
@@ -28,8 +31,11 @@ class UserControllerTest extends TestCase
         $user = factory(User::class)->create(['password' => 'password']);
 
         $userPayload = [
-        	'firstname' => 'edited firstname', 'lastname' => 'edited lastname',
-        	'gender' => 'female', 'email' => 'mynewpasword@gmail.com', 'password' => 'passcode'
+        	'firstname' => 'edited firstname 2', 
+            'lastname' => 'edited lastname 2',
+        	'gender' => 'female', 
+            'email' => 'mynewpasword'.rand(10, 500).'@gmail.com', 
+            'password' => 'passcode'
         ];
 
         $response = $this->json('PUT', '/v1/users/'.$user->id, $userPayload, $this->headers($user));

@@ -11,10 +11,10 @@ class BusinessTransformer extends TransformerAbstract
     {
         return [
             'id' => $business->id,
-            'name' => $business->name, 
-            'country' => $business->country, 
-            'state' => $business->state, 
-            'timezone' => $business->timezone, 
+            'name' => $business->name,
+            'country' => $business->country,
+            'state' => $business->state,
+            'timezone' => $business->timezone,
             'currency' => $business->currency
         ];
     }

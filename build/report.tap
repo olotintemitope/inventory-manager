@@ -12,11 +12,7 @@ ok 10 - Tests\Unit\CategoryControllerTest::testGetCategoryById
 ok 11 - Tests\Unit\CategoryControllerTest::testAuthenticateUser
 ok 12 - Tests\Unit\ItemControllerTest::testThatCreateItemWithoutUserFailed
 ok 13 - Tests\Unit\ItemControllerTest::testCreateItem
-not ok 14 - Failure: Tests\Unit\ItemControllerTest::testUpdateItem
-  ---
-  message: 'Expected status code 204 but received 422.'
-  severity: fail
-  ...
+ok 14 - Tests\Unit\ItemControllerTest::testUpdateItem
 ok 15 - Tests\Unit\ItemControllerTest::testGetItems
 ok 16 - Tests\Unit\ItemControllerTest::testGetItemById
 ok 17 - Tests\Unit\ItemControllerTest::testAuthenticateUser
@@ -25,11 +21,7 @@ ok 19 - Tests\Unit\SalesControllerTest::testCreateSales
 ok 20 - Tests\Unit\SalesControllerTest::testGetSales
 ok 21 - Tests\Unit\SalesControllerTest::testAuthenticateUser
 ok 22 - Tests\Unit\UserControllerTest::testCreateUser
-not ok 23 - Failure: Tests\Unit\UserControllerTest::testUpdateUser
-  ---
-  message: 'Expected status code 204 but received 500.'
-  severity: fail
-  ...
+ok 23 - Tests\Unit\UserControllerTest::testUpdateUser
 ok 24 - Tests\Unit\UserControllerTest::testGetUsers
 ok 25 - Tests\Unit\UserControllerTest::testGetUserById
 ok 26 - Tests\Unit\UserControllerTest::testAuthenticateUser

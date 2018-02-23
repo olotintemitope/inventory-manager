@@ -31,8 +31,12 @@ class BusinessControllerTest extends TestCase
         $user = factory(User::class)->create(['password' => 'password']);
 
         $businessPayload = [
-        	'user_id' => 1, 'name' => 'Employer', 'country' => 'Nigeria', 'state' => 'Lagos', 
-            'timezone' => 'Africa/Lagos', 'currency' => 'NGN'
+        	'user_id' => $user->id, 
+            'name' => 'Employer'.rand(10, 500), 
+            'country' => 'Nigeria', 
+            'state' => 'Lagos', 
+            'timezone' => 'Africa/Lagos', 
+            'currency' => 'NGN'
         ];
 
         $response = $this->json('POST', '/v1/businesses', $businessPayload, $this->headers($user));

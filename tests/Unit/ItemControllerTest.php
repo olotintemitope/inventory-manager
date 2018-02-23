@@ -59,7 +59,7 @@ class ItemControllerTest extends TestCase
 	public function testUpdateItem()
     {
         $business = factory(Business::class)->create();
-        $category = factory(Category::class)->create();
+        $category = factory(Category::class)->create(['business_id' => $business->id]);
         $item = factory(Item::class)->create();
 
         $user = factory(User::class)->create(['password' => 'password']);
@@ -67,7 +67,7 @@ class ItemControllerTest extends TestCase
         $itemPayload = [
             'business_id' => $business->id,
             'category_id' => $category->id,
-            'name' => 'Mango',
+            'name' => 'Mango'.rand(10, 500),
             'quantity' => 2,
         ];
 
