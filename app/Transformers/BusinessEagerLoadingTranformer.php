@@ -5,7 +5,7 @@ namespace App\Transformers;
 use App\Model\Business;
 use League\Fractal\TransformerAbstract;
 
-class BusinessTransformer extends TransformerAbstract
+class BusinessEagerLoadingTranformer extends TransformerAbstract
 {
     public function transform(Business $business)
     {
