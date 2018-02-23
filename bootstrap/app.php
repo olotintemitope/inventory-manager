@@ -41,7 +41,7 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
-$app->register(Dingo\Api\Provider\LaravelServiceProvider::class);
+//$app->register(Dingo\Api\Provider\LaravelServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
