@@ -1,7 +1,6 @@
 language: php
 
 php:
-  #- 5.5.9
   - 5.6
   - 7.0
   - hhvm
@@ -23,9 +22,7 @@ script:
   - mkdir -p build/logs
   - php vendor/bin/phpunit -c phpunit.xml
 
-notifications:
-
 after_success:
-    - travis_retry php vendor/bin/coveralls
-    # or enable logging
-    - travis_retry php vendor/bin/coveralls -v
+  - travis_retry php vendor/bin/coveralls
+  # or enable logging
+  - travis_retry php vendor/bin/coveralls -v
