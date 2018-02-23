@@ -11,7 +11,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class CategoryControllerTest extends TestCase
 {
-	use DatabaseMigrations;
+	//use DatabaseMigrations;
 
 	public function testCreateCategory()
     {

@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class UserControllerTest extends TestCase
 {
-	use DatabaseMigrations;
+	//use DatabaseMigrations;
 
 	public function testCreateUser()
     {

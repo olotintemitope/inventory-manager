@@ -10,7 +10,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class BusinessControllerTest extends TestCase
 {
-	use DatabaseMigrations;
+	//use DatabaseMigrations;
 
     public function testThatCreateBusinessWithoutUserFailed()
     {

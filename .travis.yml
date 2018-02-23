@@ -5,11 +5,11 @@ php:
   - 7.0
   - hhvm
 
-env:
-  - DB=mysql
+# env:
+#   - DB=mysql
 
-services:
-  - mysql
+# services:
+#   - mysql
 
 before_script:
   - cp .env.travis .env
