@@ -44,6 +44,7 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan db:create",
             "php artisan migrate --force",
             "php artisan db:seed --force",
             "php artisan optimize"
