@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/andela-tolotin/inventory-manager.svg?branch=master)](https://travis-ci.org/andela-tolotin/inventory-manager)
-
-[![Coverage Status](https://coveralls.io/repos/github/andela-tolotin/inventory-manager/badge.svg?branch=master)](https://coveralls.io/github/andela-tolotin/inventory-manager?branch=master)
+[![Build Status](https://travis-ci.org/andela-tolotin/inventory-manager.svg?branch=master)](https://travis-ci.org/andela-tolotin/inventory-manager) [![Coverage Status](https://coveralls.io/repos/github/andela-tolotin/inventory-manager/badge.svg?branch=master)](https://coveralls.io/github/andela-tolotin/inventory-manager?branch=master)
 
 ## About Inventory Manager
 
