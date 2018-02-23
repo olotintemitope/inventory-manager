@@ -5,7 +5,6 @@ namespace App\Transformers;
 use App\Model\Sales;
 use Swap\Laravel\Facades\Swap;
 use League\Fractal\TransformerAbstract;
-use App\Transformers\BusinessTransformer;
 use App\Transformers\ItemWithoutCategoryTransformer;
 
 class SalesTransformer extends TransformerAbstract
